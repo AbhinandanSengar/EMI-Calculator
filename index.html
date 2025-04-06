@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <div class="theme-toggle">
+            <span class="mode-text">🌞 Light</span>
+            <label class="switch">
+                <input type="checkbox" id="themeSwitch">
+                <span class="slider"></span>
+            </label>
+            <span class="mode-text">Dark 🌙</span>
+        </div>
+        <div class="form">
+            <label for="loanAmount">Loan Amount (₹):</label>
+            <input type="number" id="loanAmount" placeholder="Enter loan amount" />
+
+            <label for="interestRate">Annual Interest Rate (%):</label>
+            <input type="number" id="interestRate" placeholder="Enter interest rate" step="0.01" />
+
+            <label for="loanTenure">Loan Tenure (in months):</label>
+            <input type="number" id="loanTenure" placeholder="Enter tenure in months" />
+
+            <button onclick="calculateEMI()">Calculate EMI</button>
+
+            <div class="result" id="emiResult"></div>
+        </div>
+        <footer class="footer">
+            All Rights Reserved. Made by Abhinandan Sengar
+        </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
